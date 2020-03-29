@@ -1,14 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Скрипт показывает сколько дней осталось до нового года</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days before New Year</title>
 <body>
 <script>
 function daysBeforeNewYear() {
  today = new Date("March 29, 2020")
  nextDate = new Date("December 31, 2020")
 
- /*Колличество миллисекунд в одном дне*/
+ /*Колл-во миллисекунд в одном дне*/
  msPerDay = 24*60*60*1000;
  daysLeft = Math.round((nextDate.getTime() - today.getTime())/msPerDay);
  dayname = ""
