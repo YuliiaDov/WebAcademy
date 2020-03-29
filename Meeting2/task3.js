@@ -5,7 +5,7 @@
 // 5. Выводить в консоль простые числа от 1 до n до тех пор, пока пользователь не скажет хватить.
 
 function task1( n ) {
-    let i = 1;
+    let i = prompt ('Введи число 1');
 
     while (i<=n) {
         console.log(i);
@@ -17,7 +17,8 @@ function task1( n ) {
 // task1(5);
 // task1(10);
 
-function isSimple( n ) {
+function isSimple( ) {
+let n = prompt ('Введи число')
     for (let k = 2; k < n ; k++) {
         if (n % k === 0) {
             return false;

@@ -1,0 +1,39 @@
+*
+{
+    box-sizing: border-box;
+}
+.first,
+.second
+ {
+display: flex;
+width: 50%;
+}
+.first .colored {
+flex: 1 0 0;
+}
+.third,
+.fourth,
+.fifth {
+    display: flex;
+    width: 100%;
+}
+.third,
+.fourth
+{
+    flex-wrap: wrap;
+}
+.third .colored:not(:first-child)
+{
+flex-basis: 50%;
+}
+.fourth .colored:not(:first-child)
+{
+flex-basis: 50%;
+}
+    @media (min-width: 960px) {
+        .fifth
+        {
+        flex-direction: row;
+        width: 50%;
+        }
+    }
